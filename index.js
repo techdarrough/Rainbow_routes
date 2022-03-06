@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 
-app.get('/', function (req, res) {
+app.get('/',  (req, res) => {
     res.send(`
     <body style="margin: 0;">
     <div style="border: 1px solid black; height: 10vh; background-color: white;">
@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 })
 
 // Color Page
-app.get('/:color', function (req, res) {
+app.get('/:color',  (req, res) => {
     let myColor = req.params.color
     res.send(`
         <body style="margin: 0;">
