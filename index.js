@@ -32,3 +32,7 @@ app.listen(process.env.PORT, () => {
 })
 
 
+
+app.post('/:color', (req, res) => {
+    res.send('Hello world')
+})
